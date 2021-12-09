@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 110;
     public Text HeathScore;
+    public Slider healthbar;
     //static Enemy foe;
    
     
@@ -24,6 +25,7 @@ public class Health : MonoBehaviour
         //    currentHealth = maxHealth;
 
         currentHealth = Mathf.Min(maxHealth, currentHealth + changeInHealth);
+        healthbar.value = (float)currentHealth / maxHealth;
 
         if (currentHealth <= 0)
         {
@@ -41,7 +43,7 @@ public class Health : MonoBehaviour
             //    currentHealth = maxHealth;
 
             currentHealth = Mathf.Min(maxHealth, currentHealth + healthChange);
-            HeathScore.text = "Health: " + currentHealth.ToString();
+            healthbar.value = (float)currentHealth / maxHealth;
 
             if (currentHealth <= 0)
             {
