@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class ButtonFunctions : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("LV1");
+        SceneManager.LoadScene("WorldMap");
     }
 
     public void Exit()
