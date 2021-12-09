@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControls : MonoBehaviour
 {
+    public Text CyrsText;
+    int crystals = 0;
     public float speed = 3;
     public float jumpPower = 10;
     public float fireDelay = 8f;
@@ -16,11 +19,27 @@ public class PlayerControls : MonoBehaviour
     bool canJump = false;
     bool wasJumping = false;
     bool canFire = true;
-    bool unlocked = false;
+    bool unlocked = true;
     bool flipped = false;
+    
 
+    public int getCrystals()
+    {
+        return crystals;
+    }
+
+    public void changeCrystals(int changeCrystals)
+    {
+        crystals += changeCrystals;
+        CyrsText.text = "Crystals: " + crystals;
+
+        
+    }
     void Start()
     {
+        if(PlayerPrefs.HasKey("Crystals"))
+            crystals =PlayerPrefs.GetInt("Crystals");
+
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -84,7 +103,7 @@ public class PlayerControls : MonoBehaviour
         //Jump Method 3: Correct way.
         if (isJumping)//if pressing the spacebar/trying to jump
         {
-            jumpSound.Play();
+            //jumpSound.Play();
             //Check if the feet are colliding with something right now
             Vector3 feetPosition = transform.GetChild(0).position;
 

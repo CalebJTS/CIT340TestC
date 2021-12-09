@@ -10,15 +10,24 @@ public class LevelChange : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        save();
         SwitchLevel(false, targetLevel);
     }
 
     // Update is called once per frame
     static public void SwitchLevel(bool restartCurrent, string level = "")
     {
+        
         if (restartCurrent)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         else
             SceneManager.LoadScene(level);
+    }
+
+    public void save()
+    {
+        PlayerControls pc = FindObjectOfType<PlayerControls>();
+        PlayerPrefs.SetInt("Crystals", pc.getCrystals());
+        //PlayerPrefs.Save();
     }
 }

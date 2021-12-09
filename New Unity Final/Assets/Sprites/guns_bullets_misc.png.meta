@@ -1,100 +1,94 @@
 fileFormatVersion: 2
-guid: 56601465d05d7e0469b5004ee6e9e0fd
+guid: ea5fe50f7032b1e4fa98045a58d22de8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8287873616420496286
-    second: clouds_0
+      213: 6286156146001286791
+    second: guns_bullets_misc_0
   - first:
-      213: 7911139459876737251
-    second: clouds_1
+      213: -235936664509906899
+    second: guns_bullets_misc_1
   - first:
-      213: -1115256706364395465
-    second: clouds_2
+      213: 3151749765566081205
+    second: guns_bullets_misc_2
   - first:
-      213: -477254976604553037
-    second: clouds_3
+      213: 2921121985467679869
+    second: guns_bullets_misc_3
   - first:
-      213: 5291327898690728900
-    second: clouds_4
+      213: 4214800129566027367
+    second: guns_bullets_misc_4
   - first:
-      213: -8294918184612582425
-    second: clouds_5
+      213: 495414368342562213
+    second: guns_bullets_misc_5
   - first:
-      213: -8869869572783183582
-    second: clouds_6
+      213: -5254373527059225300
+    second: guns_bullets_misc_6
   - first:
-      213: 4149633398077095797
-    second: clouds_7
+      213: 4512151216338689238
+    second: guns_bullets_misc_7
   - first:
-      213: -7053933015307643321
-    second: clouds_8
+      213: 4020714595565610485
+    second: guns_bullets_misc_8
   - first:
-      213: -8919544922904042576
-    second: clouds_9
+      213: -2230287313330468458
+    second: guns_bullets_misc_9
   - first:
-      213: -3052748074778076258
-    second: clouds_10
+      213: -3296269086529181452
+    second: guns_bullets_misc_10
   - first:
-      213: 4522440564201344832
-    second: clouds_11
+      213: 5355541536034296957
+    second: guns_bullets_misc_11
   - first:
-      213: -5800895834718413680
-    second: clouds_12
+      213: -306003503018264580
+    second: guns_bullets_misc_12
   - first:
-      213: -5914686066510983863
-    second: clouds_13
+      213: -5997391084542243588
+    second: guns_bullets_misc_13
   - first:
-      213: 8274779338559331536
-    second: clouds_14
+      213: -5460408113495772312
+    second: guns_bullets_misc_14
   - first:
-      213: -8444972217358185434
-    second: clouds_15
+      213: -3941524958404040273
+    second: guns_bullets_misc_15
   - first:
-      213: 5405775852723589105
-    second: clouds_16
+      213: -100403387285737808
+    second: guns_bullets_misc_16
   - first:
-      213: 9175486309980564834
-    second: clouds_17
+      213: -6989137874844802111
+    second: guns_bullets_misc_17
   - first:
-      213: 1775148799022944870
-    second: clouds_18
+      213: -8417099879543151383
+    second: guns_bullets_misc_18
   - first:
-      213: -8928922196803100657
-    second: clouds_19
+      213: -4543955519113400399
+    second: guns_bullets_misc_19
   - first:
-      213: -8527696092777130334
-    second: clouds_20
+      213: 5171919889525125827
+    second: guns_bullets_misc_20
   - first:
-      213: -3224149306057994188
-    second: clouds_21
+      213: 8493215598736002556
+    second: guns_bullets_misc_21
   - first:
-      213: 6107283552212181346
-    second: clouds_22
+      213: -3582701406203948820
+    second: guns_bullets_misc_22
   - first:
-      213: 3164869652999679957
-    second: clouds_23
+      213: -809811425660300855
+    second: guns_bullets_misc_23
   - first:
-      213: -3304712205744322676
-    second: clouds_24
+      213: -4877220202202381616
+    second: guns_bullets_misc_24
   - first:
-      213: -3366764893647157846
-    second: clouds_25
+      213: 2880803277688127591
+    second: guns_bullets_misc_25
   - first:
-      213: -279751010975357376
-    second: clouds_26
+      213: 5632439139937629539
+    second: guns_bullets_misc_26
   - first:
-      213: 5201120456041310923
-    second: clouds_27
+      213: 8094767501466805503
+    second: guns_bullets_misc_27
   - first:
-      213: -89046765371265172
-    second: clouds_28
-  - first:
-      213: 1640035034794515131
-    second: clouds_29
-  - first:
-      213: 7210058697127598438
-    second: clouds_30
+      213: -6578519834019409588
+    second: guns_bullets_misc_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,7 +107,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -184,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clouds_0
+      name: guns_bullets_misc_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1995
-        width: 7
-        height: 5
+        x: 22
+        y: 422
+        width: 26
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e936312a421740370800000000000000
-      internalID: 8287873616420496286
+      spriteID: 7869b0595b9ec3750800000000000000
+      internalID: 6286156146001286791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_1
+      name: guns_bullets_misc_1
       rect:
         serializedVersion: 2
-        x: 534
-        y: 1915
-        width: 497
-        height: 82
+        x: 73
+        y: 422
+        width: 67
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0578a7c630acd60800000000000000
-      internalID: 7911139459876737251
+      spriteID: d20856a8ad8c9bcf0800000000000000
+      internalID: -235936664509906899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_2
+      name: guns_bullets_misc_2
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 1901
-        width: 599
-        height: 98
+        x: 163
+        y: 444
+        width: 29
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73037c73fefc580f0800000000000000
-      internalID: -1115256706364395465
+      spriteID: 5b8ac7d86b34dbb20800000000000000
+      internalID: 3151749765566081205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_3
+      name: guns_bullets_misc_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1884
-        width: 455
-        height: 109
+        x: 224
+        y: 438
+        width: 38
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b0c23c90237069f0800000000000000
-      internalID: -477254976604553037
+      spriteID: d74826118f8e98820800000000000000
+      internalID: 2921121985467679869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_4
+      name: guns_bullets_misc_4
       rect:
         serializedVersion: 2
-        x: 485
-        y: 1968
-        width: 4
-        height: 4
+        x: 303
+        y: 444
+        width: 29
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c3339f60b29e6940800000000000000
-      internalID: 5291327898690728900
+      spriteID: 76ead0a036afd7a30800000000000000
+      internalID: 4214800129566027367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_5
+      name: guns_bullets_misc_5
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 1931
-        width: 274
-        height: 53
+        x: 364
+        y: 438
+        width: 38
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb2d350cd782ec80800000000000000
-      internalID: -8294918184612582425
+      spriteID: 5a5dea14eb010e600800000000000000
+      internalID: 495414368342562213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_6
+      name: guns_bullets_misc_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1716
-        width: 456
-        height: 136
+        x: 439
+        y: 451
+        width: 34
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229663e3e94e7e480800000000000000
-      internalID: -8869869572783183582
+      spriteID: c252b62bd17b417b0800000000000000
+      internalID: -5254373527059225300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_7
+      name: guns_bullets_misc_7
       rect:
         serializedVersion: 2
-        x: 621
-        y: 1717
-        width: 334
-        height: 97
+        x: 521
+        y: 451
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f7b700795769930800000000000000
-      internalID: 4149633398077095797
+      spriteID: 6dcd6b6ff916e9e30800000000000000
+      internalID: 4512151216338689238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_8
+      name: guns_bullets_misc_8
       rect:
         serializedVersion: 2
-        x: 1095
-        y: 1731
-        width: 275
-        height: 66
+        x: 584
+        y: 422
+        width: 22
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7461031cb456b1e90800000000000000
-      internalID: -7053933015307643321
+      spriteID: 5f5aaeb3f927cc730800000000000000
+      internalID: 4020714595565610485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_9
+      name: guns_bullets_misc_9
       rect:
         serializedVersion: 2
-        x: 1501
-        y: 1719
-        width: 508
-        height: 92
+        x: 654
+        y: 422
+        width: 22
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,20 +381,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b36a208629673480800000000000000
-      internalID: -8919544922904042576
+      spriteID: 69980ed418d6c01e0800000000000000
+      internalID: -2230287313330468458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_10
+      name: guns_bullets_misc_10
       rect:
         serializedVersion: 2
-        x: 1603
-        y: 1715
-        width: 105
-        height: 7
+        x: 724
+        y: 422
+        width: 22
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,20 +402,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9b5816dcc572a5d0800000000000000
-      internalID: -3052748074778076258
+      spriteID: 4f8a35deabc4142d0800000000000000
+      internalID: -3296269086529181452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_11
+      name: guns_bullets_misc_11
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1521
-        width: 724
-        height: 108
+        x: 787
+        y: 430
+        width: 36
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -429,20 +423,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04fc9037bbfe2ce30800000000000000
-      internalID: 4522440564201344832
+      spriteID: d749c23f6a4b25a40800000000000000
+      internalID: 5355541536034296957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_12
+      name: guns_bullets_misc_12
       rect:
         serializedVersion: 2
-        x: 643
-        y: 1624
-        width: 16
-        height: 11
+        x: 857
+        y: 430
+        width: 36
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,20 +444,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09cd09809f31f7fa0800000000000000
-      internalID: -5800895834718413680
+      spriteID: cf7329e6f6bd0cbf0800000000000000
+      internalID: -306003503018264580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_13
+      name: guns_bullets_misc_13
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1564
-        width: 288
-        height: 57
+        x: 927
+        y: 430
+        width: 36
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,20 +465,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d09af1c50daeda0800000000000000
-      internalID: -5914686066510983863
+      spriteID: cfcc3ca859cf4cca0800000000000000
+      internalID: -5997391084542243588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_14
+      name: guns_bullets_misc_14
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 1486
-        width: 770
-        height: 128
+        x: 0
+        y: 0
+        width: 840
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,19 +486,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc129d77fbe5d270800000000000000
-      internalID: 8274779338559331536
+      spriteID: 8637c6250cbb834b0800000000000000
+      internalID: -5460408113495772312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_15
+      name: guns_bullets_misc_15
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1393
-        width: 342
+        x: 840
+        y: 305
+        width: 70
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9adf4fee3ec49c0800000000000000
+      internalID: -3941524958404040273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guns_bullets_misc_16
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 350
+        width: 70
         height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -513,20 +528,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c825ef28e6dca80800000000000000
-      internalID: -8444972217358185434
+      spriteID: 0be6696b6ab4b9ef0800000000000000
+      internalID: -100403387285737808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_16
+      name: guns_bullets_misc_17
       rect:
         serializedVersion: 2
-        x: 547
-        y: 1288
-        width: 1010
-        height: 138
+        x: 930
+        y: 299
+        width: 29
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,20 +549,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ff49fc3f7c250b40800000000000000
-      internalID: 5405775852723589105
+      spriteID: 1c3a5a30228910f90800000000000000
+      internalID: -6989137874844802111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_17
+      name: guns_bullets_misc_18
       rect:
         serializedVersion: 2
-        x: 1634
-        y: 1275
-        width: 389
-        height: 162
+        x: 840
+        y: 165
+        width: 70
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -555,20 +570,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26de9d36f20e55f70800000000000000
-      internalID: 9175486309980564834
+      spriteID: 9e4e8d85144703b80800000000000000
+      internalID: -8417099879543151383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_18
+      name: guns_bullets_misc_19
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1033
-        width: 1015
-        height: 183
+        x: 910
+        y: 210
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -576,20 +591,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66259357d6892a810800000000000000
-      internalID: 1775148799022944870
+      spriteID: 1bfe110c780a0f0c0800000000000000
+      internalID: -4543955519113400399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_19
+      name: guns_bullets_misc_20
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 1074
-        width: 471
-        height: 101
+        x: 930
+        y: 159
+        width: 29
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -597,20 +612,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f006378c198161480800000000000000
-      internalID: -8928922196803100657
+      spriteID: 3c23cedccb956c740800000000000000
+      internalID: 5171919889525125827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_20
+      name: guns_bullets_misc_21
       rect:
         serializedVersion: 2
-        x: 1729
-        y: 1056
-        width: 229
-        height: 119
+        x: 71
+        y: 0
+        width: 65
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,20 +633,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a65885d59987a980800000000000000
-      internalID: -8527696092777130334
+      spriteID: cfd477b8696fdd570800000000000000
+      internalID: 8493215598736002556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_21
+      name: guns_bullets_misc_22
       rect:
         serializedVersion: 2
-        x: 23
-        y: 822
-        width: 482
-        height: 138
+        x: 144
+        y: 0
+        width: 66
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -639,20 +654,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4305795d9458143d0800000000000000
-      internalID: -3224149306057994188
+      spriteID: ce0dbe29d00b74ec0800000000000000
+      internalID: -3582701406203948820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_22
+      name: guns_bullets_misc_23
       rect:
         serializedVersion: 2
-        x: 589
-        y: 778
-        width: 873
-        height: 196
+        x: 211
+        y: 0
+        width: 65
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,20 +675,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2616130780e61c450800000000000000
-      internalID: 6107283552212181346
+      spriteID: 9c117768cc8f2c4f0800000000000000
+      internalID: -809811425660300855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_23
+      name: guns_bullets_misc_24
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 845
-        width: 251
-        height: 73
+        x: 851
+        y: 80
+        width: 50
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,20 +696,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dfa5736e20ebeb20800000000000000
-      internalID: 3164869652999679957
+      spriteID: 0d24e541112a05cb0800000000000000
+      internalID: -4877220202202381616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_24
+      name: guns_bullets_misc_25
       rect:
         serializedVersion: 2
-        x: 11
-        y: 549
-        width: 691
-        height: 204
+        x: 921
+        y: 80
+        width: 50
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -702,20 +717,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8746bb02cd4322d0800000000000000
-      internalID: -3304712205744322676
+      spriteID: 760c162615baaf720800000000000000
+      internalID: 2880803277688127591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_25
+      name: guns_bullets_misc_26
       rect:
         serializedVersion: 2
-        x: 825
-        y: 604
-        width: 449
-        height: 81
+        x: 279
+        y: 0
+        width: 71
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -723,20 +738,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5c7e7ca29d641d0800000000000000
-      internalID: -3366764893647157846
+      spriteID: 3653dfa4e817a2e40800000000000000
+      internalID: 5632439139937629539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_26
+      name: guns_bullets_misc_27
       rect:
         serializedVersion: 2
-        x: 1326
-        y: 514
-        width: 713
-        height: 255
+        x: 851
+        y: 10
+        width: 50
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -744,20 +759,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 046e14d00ff1e1cf0800000000000000
-      internalID: -279751010975357376
+      spriteID: ff42e489724665070800000000000000
+      internalID: 8094767501466805503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clouds_27
+      name: guns_bullets_misc_28
       rect:
         serializedVersion: 2
-        x: 17
-        y: 282
-        width: 793
-        height: 198
+        x: 921
+        y: 10
+        width: 50
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -765,71 +780,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca2c508f771e2840800000000000000
-      internalID: 5201120456041310923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_28
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 294
-        width: 726
-        height: 197
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6fe5ad4074a3cef0800000000000000
-      internalID: -89046765371265172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_29
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 3
-        width: 609
-        height: 263
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bba5f14cc2392c610800000000000000
-      internalID: 1640035034794515131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: clouds_30
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 35
-        width: 825
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 669910c3f264f0460800000000000000
-      internalID: 7210058697127598438
+      spriteID: c415961c01764b4a0800000000000000
+      internalID: -6578519834019409588
       vertices: []
       indices: 
       edges: []
