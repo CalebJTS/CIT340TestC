@@ -16,13 +16,16 @@ public class PlayerControls : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource jumpSound;
     public GameObject laserPrefab;
-    Vector3 respawn;
+    public GameObject laser2;
+   Vector3 respawn;
     
     
     bool canJump = false;
     bool wasJumping = false;
     bool canFire = true;
-    bool unlocked = false;
+    public bool unlocked = false;
+    public bool unlocked2 = false;
+    public bool unlocked3 = false;
     bool flipped = false;
      
 
@@ -32,6 +35,10 @@ public class PlayerControls : MonoBehaviour
         return crystals;
     }
 
+    public Vector3 getVector()
+    {
+        return respawn;
+    }
     public void changeCrystals(int changeCrystals)
     {
         crystals += changeCrystals;
@@ -46,6 +53,7 @@ public class PlayerControls : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         jumpSound = GetComponent<AudioSource>();
+        respawn = transform.position;
 
         if (PlayerPrefs.HasKey("Crystals"))
         {
@@ -62,6 +70,11 @@ public class PlayerControls : MonoBehaviour
     {
         unlocked = check;
 
+    }
+
+    public void laser2Unlocked(bool check)
+    {
+        unlocked2 = check;
     }
 
     public int getLazer(bool check)
@@ -122,6 +135,48 @@ public class PlayerControls : MonoBehaviour
             }
         }
 
+        if(unlocked3 == true)
+        {
+            if (canFire && Input.GetAxis("Fire1") == 1)//more efficient, avoids checking Input.GetAxis whenever canFire is false
+                                                       //if (Input.GetAxis("Fire1") == 1 && canFire)
+            {
+                if (flipped == false)
+                {
+                    GameObject laser = Instantiate(laser2, transform.GetChild(1).position, transform.rotation);
+                    laser.GetComponent<Laser>().damage = -power;
+                    canFire = false;
+                    Invoke("Reload", fireDelay);
+                }
+                else if (flipped == true)
+                {
+                    Vector3 flippedSpawn = transform.position + Vector3.Reflect(transform.GetChild(1).localPosition, Vector3.right);
+                    //UnityEngine.Quaternion transformed = Quaternion.Inverse(transform.rotation);
+
+                    Quaternion flippedspawnRotate = transform.rotation * Quaternion.Euler(0, 0, 180);
+                    GameObject laser = Instantiate(laserPrefab, flippedSpawn, flippedspawnRotate);
+                    laser.GetComponent<Laser>().damage = -power;
+                    canFire = false;
+                    Invoke("Reload", fireDelay);
+                }
+
+            }
+        }
+
+        if(unlocked2 == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E) && unlocked == true)
+            {
+                unlocked3 = true;
+                unlocked = false;
+            }
+            else if(Input.GetKeyDown(KeyCode.E) && unlocked3 == true)
+            {
+                unlocked3 = false;
+                unlocked = true; 
+            }
+        }
+
+
 
 
 
@@ -179,13 +234,52 @@ public class PlayerControls : MonoBehaviour
         {
             case "Checkpoint":
                 respawn = col.gameObject.transform.position;
+                Debug.Log("TOuched");
+                Debug.Log(respawn);
                 break;
             case "Crystals":
                 changeCrystals(1);
                 Destroy(col.gameObject);
                 break;
+            case "Death":
+                transform.position = respawn;
+                gameObject.GetComponent<Health>().heal();
+                break;
+            case "Enemy":
+
+                if(gameObject.GetComponent<Health>().checkCurrentHealth() <= 0)
+                {
+                    Debug.Log("What the");
+                    transform.position = respawn;
+                    gameObject.GetComponent<Health>().heal();
+                    break;
+                }
+                else
+                {
+                    Debug.Log("What the");
+                    break;
+                }
 
 
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            if (gameObject.GetComponent<Health>().checkCurrentHealth() <= 0)
+            {
+                Debug.Log("What the");
+                transform.position = respawn;
+                gameObject.GetComponent<Health>().heal();
+                
+            }
+            else
+            {
+                Debug.Log("What the h");
+                
+            }
         }
     }
 
@@ -193,6 +287,8 @@ public class PlayerControls : MonoBehaviour
     {
         canFire = true;
     }
+
+    
 
      
 }

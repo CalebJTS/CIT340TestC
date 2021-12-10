@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
     public int maxHealth = 110;
     public Text HeathScore;
     public Slider healthbar;
+    public GameObject player;
     //static Enemy foe;
    
     
@@ -25,7 +26,8 @@ public class Health : MonoBehaviour
         //    currentHealth = maxHealth;
 
         currentHealth = Mathf.Min(maxHealth, currentHealth + changeInHealth);
-        healthbar.value = (float)currentHealth / maxHealth;
+        //HeathScore.text = "Health: " + currentHealth;
+        //healthbar.value = (float)currentHealth / maxHealth;
 
         if (currentHealth <= 0)
         {
@@ -47,12 +49,17 @@ public class Health : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                GameOver();
+                //GameOver();
                 return true;
             }
             return false;
         }
 
+    }
+
+    public int checkCurrentHealth()
+    {
+        return currentHealth;
     }
 
     public bool WillKill(int changeInHealth)
@@ -68,19 +75,23 @@ public class Health : MonoBehaviour
         
     }
 
-    public void GameOver()
+    public bool GameOver()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-Application.Quit();
-#endif
+
+        return true;
+        
+//#if UNITY_EDITOR
+        //UnityEditor.EditorApplication.isPlaying = false;
+//#else
+//Application.Quit();
+//#endif
     }
 
     public void heal()
     {
         currentHealth = maxHealth;
-        HeathScore.text = "Health: " + currentHealth.ToString();
+        healthbar.value = (float)currentHealth / maxHealth;
+        //HeathScore.text = "Health: " + currentHealth.ToString();
         
     }
 }

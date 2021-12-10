@@ -5347,6 +5347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedAsteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 5897310831914928772, guid: 210a43358e5c9b343b450a1bad266cdd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8395442775185035710, guid: 210a43358e5c9b343b450a1bad266cdd, type: 3}
       propertyPath: m_Constraints
       value: 7
@@ -6256,6 +6260,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.67
+--- !u!1 &815606019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5897310831914928772, guid: 210a43358e5c9b343b450a1bad266cdd, type: 3}
+  m_PrefabInstance: {fileID: 366415758}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &815606024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815606019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269e289de13a4f247be4fa0221f6ec49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  HeathScore: {fileID: 0}
+  healthbar: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1001 &976953427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6928,6 +6953,10 @@ PrefabInstance:
     - target: {fileID: 3339687549676404443, guid: a42f3b30d74884e4c94be62a81084bc8, type: 3}
       propertyPath: m_Name
       value: ship (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3339687549676404443, guid: a42f3b30d74884e4c94be62a81084bc8, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6529650157117536614, guid: a42f3b30d74884e4c94be62a81084bc8, type: 3}
       propertyPath: m_RootOrder

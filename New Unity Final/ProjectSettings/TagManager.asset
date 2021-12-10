@@ -9,6 +9,8 @@ TagManager:
   - Red
   - Crystal
   - Crystals
+  - Checkpoint
+  - Death
   layers:
   - Default
   - TransparentFX

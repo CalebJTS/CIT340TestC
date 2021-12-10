@@ -5,12 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class Level1Change : MonoBehaviour
 {
+     void Start()
+    {
+        if (PlayerPrefs.GetInt("hasLazer") == 1)
+        {
+            gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
+        }
+        else
+        {
+            return;
+        }
+    }
+
     public string targetLevel;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //save();
-        SwitchLevel(false, targetLevel);
+        if (collision.CompareTag("Player"))
+        {
+            //save();
+            SwitchLevel(false, targetLevel);
+           
+            
+
+        }
+        
     }
 
     // Update is called once per frame

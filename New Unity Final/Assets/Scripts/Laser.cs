@@ -26,21 +26,21 @@ public class Laser : MonoBehaviour
         //gameObject;//Refers to the object this script is on (the laser)
         //collision.gameObject;//Refers to the object it collided with
         
-        if(collision.gameObject.tag == "enemy")
+        if(collision.gameObject.tag == "Enemy")
             Destroy(collision.gameObject);
         Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             //In order to spawn baby asteroids by copying the parent asteroid, this just checks
             //if it is going to kill the asteroid, then copies, then destroys the parent.
 
             //Refactoring = reorganizing code to make it more efficient and/or readable
             //This code should be a function in the asteroid script, instead of here
-            bool killedAsteroid = collision.gameObject.GetComponent<Health>().WillKill(damage);
+            //bool killedAsteroid = collision.gameObject.GetComponent<Health>().WillKill(damage);
            /* if(killedAsteroid)
             {
                // AsteroidManager.asteroidManagerInstance.currentAsteroidCount--;
