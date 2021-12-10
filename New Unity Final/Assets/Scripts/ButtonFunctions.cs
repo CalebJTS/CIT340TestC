@@ -15,10 +15,16 @@ public class ButtonFunctions : MonoBehaviour
         LevelChange.SwitchLevel(false, "Worldmap");
     }
 
+    public void Credits()
+    {
+        LevelChange.SwitchLevel(false, "Credits");
+    }
+
     public void Exit()
     {
         #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = true;
+            UnityEditor.EditorApplication.isPlaying = false;
+        
         #else
             Application.Quit();
         #endif
