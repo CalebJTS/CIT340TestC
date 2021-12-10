@@ -10,7 +10,7 @@ public class LevelChange : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //save();
+        save();
         SwitchLevel(false, targetLevel);
     }
 
@@ -31,8 +31,7 @@ public class LevelChange : MonoBehaviour
         PlayerPrefs.SetInt("Crystals", pc.getCrystals());
         PlayerPrefs.SetFloat("PlayerX", pc.gameObject.transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", pc.gameObject.transform.position.y);
-        PlayerPrefs.SetInt("Unlocked", pc.getLazer(true));
-        PlayerPrefs.SetInt("Unlocked", p.getUnlockedLazer(true));
+        PlayerPrefs.SetInt("hasLazer", 1);
        PlayerPrefs.Save();
     }
 }

@@ -27,6 +27,41 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerPrefs.HasKey("hasLazer"))
+        {
+            if(PlayerPrefs.GetInt("hasLazer") == 1)
+            {
+                unlocked = true;
+            }
+            else
+            {
+                unlocked = false;
+            }
+        }
+        if(PlayerPrefs.HasKey("Crystals"))
+        {
+            switch (PlayerPrefs.GetInt("Crystals"))
+            {
+                case 1:
+                    scoreText.text = "Crystals: " + 1;
+                    break;
+                case 2:
+                    scoreText.text = "Crystals: " + 2;
+                    break;
+                case 3:
+                    scoreText.text = "Crystals: " + 3;
+                    break;
+                case 4:
+                    scoreText.text = "Crystals: " + 4;
+                    break;
+                case 5:
+                    scoreText.text = "Crystals: " + 5;
+                    break;
+
+
+            }
+            
+        }
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
             Debug.Log("The Player object should have a RigidBody2D component!");

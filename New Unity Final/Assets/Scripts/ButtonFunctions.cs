@@ -6,7 +6,13 @@ public class ButtonFunctions : MonoBehaviour
 {
     public void Play()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("WorldMap");
+    }
+
+    public void Continue()
+    {
+        LevelChange.SwitchLevel(false, "Worldmap");
     }
 
     public void Exit()

@@ -35,7 +35,7 @@ public class LazerPowerup : MonoBehaviour
         Debug.Log("Picked up!");
 
         col.gameObject.GetComponent<PlayerControls>().laserUnlocked(true);
-        gameObject.GetComponent<Player>().laserUnlockedShip(true);
+        //gameObject.GetComponent<Player>().laserUnlockedShip(true);
         Destroy(gameObject);
         //obtainedMessage.enabled = true;
         

@@ -16,6 +16,7 @@ public class PlayerControls : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource jumpSound;
     public GameObject laserPrefab;
+    Vector3 respawn;
     
     
     bool canJump = false;
@@ -40,8 +41,6 @@ public class PlayerControls : MonoBehaviour
     }
     void Start()
     {
-
-
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
@@ -52,11 +51,10 @@ public class PlayerControls : MonoBehaviour
         {
             changeCrystals(PlayerPrefs.GetInt("Crystals"));
         }
-        if (PlayerPrefs.HasKey("Unlocked"))
-        {
-            laserUnlocked(true);
+        
+        
 
-        }
+       
 
     }
 
@@ -172,6 +170,22 @@ public class PlayerControls : MonoBehaviour
             spriteRenderer.flipX = false;
             flipped =false;
            
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        switch (col.gameObject.tag)
+        {
+            case "Checkpoint":
+                respawn = col.gameObject.transform.position;
+                break;
+            case "Crystals":
+                changeCrystals(1);
+                Destroy(col.gameObject);
+                break;
+
+
         }
     }
 
