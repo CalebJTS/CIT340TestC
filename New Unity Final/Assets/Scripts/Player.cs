@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public int power = 25;
     public Text scoreText;
     int remain = 7;
+    public bool unlocked = false;
+    
 
     int score = 0;
     bool canFire = true;
@@ -35,6 +37,23 @@ public class Player : MonoBehaviour
     {
         
     }
+
+    public void laserUnlockedShip(bool check)
+    {
+        unlocked = check;
+    }
+
+    public int getUnlockedLazer(bool check)
+    {
+        if (check == true)
+        {
+            return 1;
+        }
+        else
+            return 0;
+    }
+
+
 
     //FixedUpdate is synchronized with the physics engine
     //Use FixedUpdate to avoid jitter when objects are moving into each other.
@@ -71,15 +90,18 @@ public class Player : MonoBehaviour
         //the velocity this way:
         //rb.velocity = new Vector2(0, 0);
         //rb.angularVelocity = 0;
-
-        if (canFire && Input.GetAxis("Fire1") == 1)//more efficient, avoids checking Input.GetAxis whenever canFire is false
-        //if (Input.GetAxis("Fire1") == 1 && canFire)
+    if(unlocked == true)
         {
-            GameObject laser = Instantiate(laserPrefab, transform.GetChild(1).position, transform.rotation);
-            laser.GetComponent<Laser>().damage = -power;
-            canFire = false;
-            Invoke("Reload", fireDelay);
+            if (canFire && Input.GetAxis("Fire1") == 1)//more efficient, avoids checking Input.GetAxis whenever canFire is false
+                                                       //if (Input.GetAxis("Fire1") == 1 && canFire)
+            {
+                GameObject laser = Instantiate(laserPrefab, transform.GetChild(1).position, transform.rotation);
+                laser.GetComponent<Laser>().damage = -power;
+                canFire = false;
+                Invoke("Reload", fireDelay);
+            }
         }
+       
     }
 
     void Reload()

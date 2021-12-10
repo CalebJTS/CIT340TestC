@@ -10,7 +10,7 @@ public class LazerPowerup : MonoBehaviour
     void Start()
     {
         
-        obtainedMessage.enabled = false;
+        //obtainedMessage.enabled = false;
     }
 
     // Update is called once per frame
@@ -35,7 +35,9 @@ public class LazerPowerup : MonoBehaviour
         Debug.Log("Picked up!");
 
         col.gameObject.GetComponent<PlayerControls>().laserUnlocked(true);
-        obtainedMessage.enabled = true;
+        gameObject.GetComponent<Player>().laserUnlockedShip(true);
+        Destroy(gameObject);
+        //obtainedMessage.enabled = true;
         
 
     }

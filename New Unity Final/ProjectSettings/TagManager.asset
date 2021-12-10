@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Laser
+  - Red
+  - Crystal
+  - Crystals
   layers:
   - Default
   - TransparentFX

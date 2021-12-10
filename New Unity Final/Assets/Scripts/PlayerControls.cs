@@ -16,12 +16,15 @@ public class PlayerControls : MonoBehaviour
     SpriteRenderer spriteRenderer;
     AudioSource jumpSound;
     public GameObject laserPrefab;
+    
+    
     bool canJump = false;
     bool wasJumping = false;
     bool canFire = true;
-    bool unlocked = true;
+    bool unlocked = false;
     bool flipped = false;
-    
+     
+
 
     public int getCrystals()
     {
@@ -37,18 +40,42 @@ public class PlayerControls : MonoBehaviour
     }
     void Start()
     {
-        if(PlayerPrefs.HasKey("Crystals"))
-            crystals =PlayerPrefs.GetInt("Crystals");
+
 
         rb = GetComponent<Rigidbody2D>();
+
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         jumpSound = GetComponent<AudioSource>();
+
+        if (PlayerPrefs.HasKey("Crystals"))
+        {
+            changeCrystals(PlayerPrefs.GetInt("Crystals"));
+        }
+        if (PlayerPrefs.HasKey("Unlocked"))
+        {
+            laserUnlocked(true);
+
+        }
+
     }
 
     public void laserUnlocked(bool check)
     {
         unlocked = check;
+
+    }
+
+    public int getLazer(bool check)
+    {
+        if(check == true)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
     void FixedUpdate()
     {

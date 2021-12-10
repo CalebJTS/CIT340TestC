@@ -25,7 +25,7 @@ public class Laser : MonoBehaviour
     {
         //gameObject;//Refers to the object this script is on (the laser)
         //collision.gameObject;//Refers to the object it collided with
-
+        
         if(collision.gameObject.tag == "enemy")
             Destroy(collision.gameObject);
         Destroy(gameObject);
