@@ -11,6 +11,8 @@ TagManager:
   - Crystals
   - Checkpoint
   - Death
+  - Hyper
+  - Bolder
   layers:
   - Default
   - TransparentFX

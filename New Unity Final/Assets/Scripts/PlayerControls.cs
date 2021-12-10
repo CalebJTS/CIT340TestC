@@ -153,7 +153,7 @@ public class PlayerControls : MonoBehaviour
                     //UnityEngine.Quaternion transformed = Quaternion.Inverse(transform.rotation);
 
                     Quaternion flippedspawnRotate = transform.rotation * Quaternion.Euler(0, 0, 180);
-                    GameObject laser = Instantiate(laserPrefab, flippedSpawn, flippedspawnRotate);
+                    GameObject laser = Instantiate(laser2, flippedSpawn, flippedspawnRotate);
                     laser.GetComponent<Laser>().damage = -power;
                     canFire = false;
                     Invoke("Reload", fireDelay);
