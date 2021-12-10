@@ -59,8 +59,15 @@ public class PlayerControls : MonoBehaviour
         {
             changeCrystals(PlayerPrefs.GetInt("Crystals"));
         }
-        
-        
+
+        if (PlayerPrefs.HasKey("hasLazer"))
+        {
+            unlocked = true;
+        }
+        else
+        {
+            unlocked = false;
+        }
 
        
 
@@ -143,7 +150,7 @@ public class PlayerControls : MonoBehaviour
                 if (flipped == false)
                 {
                     GameObject laser = Instantiate(laser2, transform.GetChild(1).position, transform.rotation);
-                    laser.GetComponent<Laser>().damage = -power;
+                    laser.GetComponent<HyperLazer>().damage = -power;
                     canFire = false;
                     Invoke("Reload", fireDelay);
                 }
@@ -154,7 +161,7 @@ public class PlayerControls : MonoBehaviour
 
                     Quaternion flippedspawnRotate = transform.rotation * Quaternion.Euler(0, 0, 180);
                     GameObject laser = Instantiate(laser2, flippedSpawn, flippedspawnRotate);
-                    laser.GetComponent<Laser>().damage = -power;
+                    laser.GetComponent<HyperLazer>().damage = -power;
                     canFire = false;
                     Invoke("Reload", fireDelay);
                 }

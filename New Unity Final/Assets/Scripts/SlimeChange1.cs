@@ -21,11 +21,11 @@ public class SlimeChange1 : MonoBehaviour
 
         if (rb.velocity.magnitude > .01f)
         {
-            anim.SetBool("isSpotted", true);
+            anim.SetBool("isWalking", true);
         }
         else
         {
-            anim.SetBool("isSpotted", false);
+            anim.SetBool("isWalking", false);
         }
 
         if (rb.velocity.x < 0)

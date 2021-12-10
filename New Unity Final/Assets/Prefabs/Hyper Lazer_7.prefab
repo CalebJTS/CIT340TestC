@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3933083209663237902}
   - component: {fileID: 6621656386681535329}
   - component: {fileID: 386455683265448472}
-  - component: {fileID: 9071187984801124797}
   - component: {fileID: -4918518223437710533}
   - component: {fileID: 2394667031629496011}
+  - component: {fileID: 6679760871597713785}
   m_Layer: 0
   m_Name: Hyper Lazer_7
   m_TagString: Untagged
@@ -101,9 +101,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.13, y: 0}
+  m_Offset: {x: 3.34, y: 0}
   serializedVersion: 2
-  m_Radius: 0.93
+  m_Radius: 0.42
 --- !u!114 &386455683265448472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,21 +116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091491e837648284293a43b98bd0e0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9071187984801124797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019224915481322280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced1949f63680ab4f9d96b344fd6bc76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 8117505586913067044, guid: 2335c9887c9287c4c89c62a3e4b7a2ff, type: 3}
-  speed: 15
-  damage: -5
 --- !u!50 &-4918518223437710533
 Rigidbody2D:
   serializedVersion: 4
@@ -166,3 +151,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToExpire: 0.2
   start: 1
+--- !u!114 &6679760871597713785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019224915481322280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bc99653d70faf4ea05c3c2103abe3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 8117505586913067044, guid: 2335c9887c9287c4c89c62a3e4b7a2ff, type: 3}
+  speed: 15
+  damage: -5

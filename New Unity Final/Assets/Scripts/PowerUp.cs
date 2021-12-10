@@ -6,7 +6,7 @@ public class PowerUp : MonoBehaviour
 {
 
 
-    public GameObject effect;
+    public AudioClip SoundEffect;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,9 +19,10 @@ public class PowerUp : MonoBehaviour
 
     void Buff(Collider2D col)
     {
-        Instantiate(effect, transform.position, transform.rotation);
+        
         Debug.Log("Picked up!");
-        col.gameObject.GetComponent<Health>().heal();
+        AudioSource.PlayClipAtPoint(SoundEffect, transform.position);
         Destroy(gameObject);
+        
     }
 }

@@ -13,6 +13,8 @@ TagManager:
   - Death
   - Hyper
   - Bolder
+  - collect
+  - objectCollection
   layers:
   - Default
   - TransparentFX
