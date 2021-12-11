@@ -3766,7 +3766,7 @@ PrefabInstance:
     - target: {fileID: 8875848241480245063, guid: 79b173ebe639b5040aac5d931aba7cf3, type: 3}
       propertyPath: laser2
       value: 
-      objectReference: {fileID: 1019224915481322280, guid: 295d9ae8f3e24754aaeb1f7a35948ba2, type: 3}
+      objectReference: {fileID: 3859807396411646221, guid: bae20674a641b6c4d87e8cef153b64d2, type: 3}
     - target: {fileID: 9081942364904615823, guid: 79b173ebe639b5040aac5d931aba7cf3, type: 3}
       propertyPath: m_Name
       value: RobotBoyIdleSprite_0 Variant 1

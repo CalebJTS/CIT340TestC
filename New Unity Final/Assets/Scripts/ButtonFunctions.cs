@@ -22,11 +22,17 @@ public class ButtonFunctions : MonoBehaviour
 
     public void Exit()
     {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        
-        #else
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+
+#else
             Application.Quit();
-        #endif
+#endif
+    }
+
+    public void cow(){
+
+        LevelChange.SwitchLevel(false, "SecretCowLevel");
+
     }
 }

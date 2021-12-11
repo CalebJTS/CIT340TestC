@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 6577eff53b2471245992a08606e3f27c
+  - enabled: 1
+    path: Assets/Scenes/SecretCowLevel.unity
+    guid: 58cfd7d0d5105234b99b595b41504325
   m_configObjects: {}
