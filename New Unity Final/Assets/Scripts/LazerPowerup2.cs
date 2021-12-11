@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LazerPowerup2 : MonoBehaviour
 {
     // Start is called before the first frame update
-    //public Text obtainedMessage;
+    public Text obtainedMessage;
+
     void Start()
     {
 
@@ -35,8 +37,10 @@ public class LazerPowerup2 : MonoBehaviour
 
         col.gameObject.GetComponent<PlayerControls>().laser2Unlocked(true);
         //gameObject.GetComponent<Player>().laserUnlockedShip(true);
+        obtainedMessage.enabled = false;
         Destroy(gameObject);
-        //obtainedMessage.enabled = true;
+
+        
 
     }
 }

@@ -16,7 +16,7 @@ public class SimpleEnemy1 : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-            collision.gameObject.GetComponent<Health>().ChangePlayerHealth(-damage);
+            collision.gameObject.GetComponent<Health>().ChangePlayerHealth(damage);
         }
         else if (collision.gameObject.tag == "Laser")
         {

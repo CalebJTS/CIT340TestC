@@ -33,14 +33,14 @@ public class WaveManager : MonoBehaviour
         for(int i = 0; i < numEnemiesThisWave; ++i)
         {
             GameObject prefabToSpawn = enemyPrefabs[Random.Range(0, enemyPrefabs.Count)];
-            Instantiate(prefabToSpawn, WaypointManager.staticWaypoints[0], Quaternion.identity);
+            Instantiate(prefabToSpawn, WaypointManager.staticWaypoints[i], Quaternion.identity);
             yield return new WaitForSeconds(delayBetweenSpawns);
 
             //This for loop will spawn 1 enemy, then pause and we will return to it
             //in a later frame.
         }
 
-        numEnemiesThisWave += numAdditionalEnemiesPerWave;
+        numEnemiesThisWave = numAdditionalEnemiesPerWave;
         yield return new WaitForSeconds(delayBetweenWaves);
         StartCoroutine(SpawnWave());
     }

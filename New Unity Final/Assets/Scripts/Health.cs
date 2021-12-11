@@ -44,7 +44,8 @@ public class Health : MonoBehaviour
             //if (currentHealth > maxHealth)
             //    currentHealth = maxHealth;
 
-            currentHealth = Mathf.Min(maxHealth, currentHealth + healthChange);
+            currentHealth = Mathf.Min(maxHealth, currentHealth - healthChange);
+            Debug.Log(currentHealth);
             healthbar.value = (float)currentHealth / maxHealth;
 
             if (currentHealth <= 0)
@@ -57,9 +58,9 @@ public class Health : MonoBehaviour
 
     }
 
-    public int checkCurrentHealth()
+    public int checkCurrentHealth(int dam)
     {
-        return currentHealth;
+        return currentHealth - dam;
     }
 
     public bool WillKill(int changeInHealth)

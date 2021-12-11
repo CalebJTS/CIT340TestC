@@ -15,6 +15,7 @@ TagManager:
   - Bolder
   - collect
   - objectCollection
+  - Enemy1
   layers:
   - Default
   - TransparentFX

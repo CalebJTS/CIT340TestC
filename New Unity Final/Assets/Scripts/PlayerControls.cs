@@ -242,6 +242,7 @@ public class PlayerControls : MonoBehaviour
             case "Checkpoint":
                 respawn = col.gameObject.transform.position;
                 Debug.Log("TOuched");
+                gameObject.GetComponent<Health>().heal();
                 Debug.Log(respawn);
                 break;
             case "Crystals":
@@ -252,32 +253,34 @@ public class PlayerControls : MonoBehaviour
                 transform.position = respawn;
                 gameObject.GetComponent<Health>().heal();
                 break;
-            case "Enemy":
+                /*case "Enemy":
 
-                if(gameObject.GetComponent<Health>().checkCurrentHealth() <= 0)
-                {
-                    Debug.Log("What the");
-                    transform.position = respawn;
-                    gameObject.GetComponent<Health>().heal();
-                    break;
-                }
-                else
-                {
-                    Debug.Log("What the");
-                    break;
-                }
+                    if(gameObject.GetComponent<Health>().checkCurrentHealth() <= 0)
+                    {
+                        Debug.Log("What the");
+                        transform.position = respawn;
+                        gameObject.GetComponent<Health>().heal();
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("What the he");
+                        break;
+                    }*/
 
 
+            }
         }
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            if (gameObject.GetComponent<Health>().checkCurrentHealth() <= 0)
+            int damage = collision.gameObject.GetComponent<SimpleEnemy1>().damage;
+            if (gameObject.GetComponent<Health>().checkCurrentHealth(damage) <= 0)
             {
-                Debug.Log("What the");
+                Debug.Log(gameObject.GetComponent<Health>().checkCurrentHealth(damage));
                 transform.position = respawn;
                 gameObject.GetComponent<Health>().heal();
                 
@@ -285,10 +288,35 @@ public class PlayerControls : MonoBehaviour
             else
             {
                 Debug.Log("What the h");
-                
+                Debug.Log(gameObject.GetComponent<Health>().checkCurrentHealth(damage));
+
+
+            }
+        }
+        else if(collision.gameObject.tag == "Enemy1")
+        {
+            int damage = collision.gameObject.GetComponent<SimpleEnemy1>().damage;
+            if (gameObject.GetComponent<Health>().checkCurrentHealth(damage) <= 0)
+            {
+                Debug.Log(gameObject.GetComponent<Health>().checkCurrentHealth(damage));
+                transform.position = respawn;
+                gameObject.GetComponent<Health>().heal();
+
+            }
+            else
+            {
+                Debug.Log("What the h");
+                Debug.Log(gameObject.GetComponent<Health>().checkCurrentHealth(damage));
+
+
             }
         }
     }
+
+
+
+
+
 
     void Reload()
     {
