@@ -25,8 +25,8 @@ public class MoveAndRotate : MonoBehaviour
 
     void Start()
     {
-        if (targetTransform == null)
-            targetTransform = FindObjectOfType<PlayerControls>().transform;
+        //if (targetTransform == null)
+            //targetTransform = FindObjectOfType<PlayerControls>().transform;
     }
 
     void Update()

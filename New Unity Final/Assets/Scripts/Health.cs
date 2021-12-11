@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
     public int maxHealth = 110;
     public Text HeathScore;
     public Slider healthbar;
-    public GameObject player;
+    //public GameObject player;
     //static Enemy foe;
    
     

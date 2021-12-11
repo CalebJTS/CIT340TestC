@@ -24,7 +24,7 @@ public class objectCollection : MonoBehaviour
     {
         collectables = GameObject.FindGameObjectsWithTag("collect");
 
-        counter.text = "Collectables: " + collectables.Length.ToString();
+        counter.text = "Rosecoins Remaining: " + collectables.Length.ToString();
         
     }
 
